@@ -265,19 +265,14 @@
   width: 90%;
   height: 250px;
   display: flex;
-  /* padding: 60px auto 40px; */
   justify-content: space-between;
-  /* flex-basis: 711px; */
-  /* margin: 60px auto; */
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   line-height: 30px;
   font-size: 18px;
-  /* flex-basis: 711px; */
 }
 
 .footer__column_content_copyright {
@@ -296,9 +291,6 @@
   font-size: 18px;
 }
 
-.footer__column_content_info {
-}
-
 .footer__column-heading {
   font-weight: bold;
   margin: 0;
@@ -313,12 +305,6 @@
 .footer__link {
   text-decoration: none;
   color: white;
-}
-
-.footer__column {
-}
-
-.footer__column_content_social {
 }
 
 .footer__social-icons {
