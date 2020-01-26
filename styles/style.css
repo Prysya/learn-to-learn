@@ -21,10 +21,6 @@
   background-color: #f2f2f2;
 }
 
-.logo {
-  /* background-image: url(../images/logo.svg); */
-}
-
 .logo_place_header {
   height: 32px;
   width: 183px;
@@ -221,18 +217,6 @@
   z-index: 2;
 }
 
-.feinmann__main-illustration {
-  width: 867px;
-  height: 637px;
-  background-image: url(../images/feinman.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
-}
-
 /* kaufmann */
 
 .kaufman {
@@ -240,7 +224,6 @@
   padding: 90px 0;
   position: relative;
   overflow: hidden;
-  /* color: white; */
 }
 
 .section-title_theme_dark {
@@ -266,7 +249,7 @@
   right: -210px;
 }
 
-/* foooter */
+/* footer */
 
 .footer {
   min-height: 350px;
