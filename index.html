@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
   </head>
-  
+
   <body>
     <div class="page">
       <header class="header">
@@ -51,6 +50,128 @@
               </p>
             </div>
           </div>
+        </section>
+
+        <section class="technics">
+          <h2 class="section-title">Техники обучения</h2>
+          <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+          <!--Отлично:
+            Для реализации данной сетки использован grid-layout - круто!
+          -->
+          <div class="cards">
+            <article class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/attention.png"
+                alt="Два вида внимания"
+              />
+              <h3 class="cards__title">Два вида внимания</h3>
+              <p class="cards__description">
+                Глубокие знания возникают, если чередовать сфокусированное и
+                рассеянное мышление.
+              </p>
+            </article>
+
+            <article class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/recall.png"
+                alt="Вспоминайте изученное"
+              />
+              <h3 class="cards__title">Recall</h3>
+              <p class="cards__description">
+                Вспоминайте изученное — это позволит соединить разрозненные
+                порции памяти.
+              </p>
+            </article>
+
+            <article class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/interliving.png"
+                alt="Изучайте несколько навыков одновременно"
+              />
+              <h3 class="cards__title">Интерливинг</h3>
+              <p class="cards__description">
+                Изучайте несколько навыков одновременно, они обогащают друг
+                друга.
+              </p>
+            </article>
+
+            <article class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/question.png"
+                alt="Вопросы"
+              />
+              <h3 class="cards__title">Вопросы</h3>
+              <p class="cards__description">
+                Слушая преподавателя, придумывайте хороший вопрос, который вас
+                действительно волнует.
+              </p>
+            </article>
+
+            <article class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/competence.png"
+                alt="Иллюзия компетентности"
+              />
+              <h3 class="cards__title">Иллюзия компетентности</h3>
+              <p class="cards__description">
+                Повторите про себя, запишите, расскажите другу: вам только
+                кажется, что вы владеете новой темой.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="video">
+          <h2 class="section-title">Видео на TED</h2>
+          <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+          <div class="video__iframes">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/5MgBikgcWnY"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/arj7oStGLkU"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <!-- Исправлено -->
+            <!-- Надо исправить: Атрибуты width и height нужно перенести в CSS, писать стили в HTML - плохая практика.-->
+          </div>
+        </section>
+
+        <section class="oakley">
+          <div class="two-columns">
+            <h2 class="two-columns__brief">
+              История Барбары Оакли.
+            </h2>
+
+            <div class="two-columns__main-text">
+              <p class="two-columns__paragraph">
+                С детства Барбаре не давалась математика. Она считала себя
+                законченным гуманитарием, причём далеко не самым умным. В армии
+                она изучала русский язык, чтобы получить надбавку, да так
+                успешно, что её выдвинули в командиры. Но для продвижения по
+                службе нужно было сдавать математику. И тогда Барбара придумала
+                свой подход к точным наукам. Оказалось, если вам что-то «плохо
+                даётся», ваши добытые трудом знания гораздо глубже, чем у тех,
+                кому всё ясно с первого взгляда.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="feinman">
+          <h2 class="feinman__title">Метод Фейнмана</h2>
+          <p class="feinman__subtitle">Выучить и не забыть</p>
+          <a class="feinman__link" href="#">Подробнее &rarr;</a>
         </section>
 
         <section class="digits">
@@ -102,10 +223,38 @@
           </div>
         </section>
 
-        <section class="feinman">
-          <h2 class="feinman__title">Метод Фейнмана</h2>
-          <p class="feinman__subtitle">Выучить и не забыть</p>
-          <a class="feinman__link" href="#">Подробнее &rarr;</a>
+        <section class="khan">
+          <div class="khan__container">
+            <address class="khan__author">Салман Хан</address>
+            <h2 class="khan__title">Весь мир — школа</h2>
+            <blockquote class="khan__blockquote">
+              <p class="khan__quote">
+                Страсть и новаторство Сала Хана меняют процесс обучения
+                миллионов студентов по всему миру. Книгу «Весь мир — школа»
+                нужно прочитать всем, кто занимается образованием — так учащиеся
+                повсюду смогут получить навыки и знания, которые приносят успех
+                в школе, карьере и жизни.
+              </p>
+            <!-- Не очень понятно, нужно ли оборачивать автора цитаты и subline -->
+            <!-- Можно лучше: 
+                По смыслу это цитата, так что тут лучше использовать элемент blockquote.
+                Подробнее можно почитать тут: https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote
+              -->
+            <footer>
+              <h3 class="khan__quote-author">Джордж Лукас</h3>
+              <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+            </footer>
+          </blockquote>
+            <div class="khan__book-container">
+              <img
+                class="khan__book-pic"
+                src="./images/book.jpg"
+                alt="Книга
+              'Весь мир — школа', автор Саламан Хан"
+              />
+              <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
+            </div>
+          </div>
         </section>
 
         <section class="kaufman">
@@ -188,13 +337,65 @@
           </div>
           <div class="kaufman__triangle"></div>
         </section>
+
+        <section class="resources">
+          <h2 class="section-title">Полезные ресурсы</h2>
+          <p class="section-subtitle">
+            Больше материалов о техниках и лайфхаках обучения
+          </p>
+          <ul class="resources__logo-zone">
+            <li class="resources__logo-zone-item">
+              <a class="resources__link" href="#">
+                <img
+                  class="resources__logo"
+                  src="./images/logo/arzamas.svg"
+                  alt="Arzamas"
+                />
+              </a>
+            </li>
+            <li class="resources__logo-zone-item">
+              <a class="resources__link" href="#">
+                <img
+                  class="resources__logo"
+                  src="./images/logo/n1.svg"
+                  alt="N+1"
+                />
+              </a>
+            </li>
+            <li class="resources__logo-zone-item">
+              <a class="resources__link" href="#">
+                <img
+                  class="resources__logo"
+                  src="./images/logo/strelka.svg"
+                  alt="STRELKA"
+                />
+              </a>
+            </li>
+            <li class="resources__logo-zone-item">
+              <a class="resources__link" href="#">
+                <img
+                  class="resources__logo"
+                  src="./images/logo/polka.svg"
+                  alt="ПОЛКА"
+                />
+              </a>
+            </li>
+          </ul>
+          <!-- Исправлено -->
+          <!-- Надо исправить:
+            1. По смыслу это должны быть ссылки на ресурсы, оберните img в ссылки(не забудьте также эффекты при наведении)
+            2. Однотипные элементы нужно оборачивать в список, для resources__logo-zone используйте ul вместо div
+          -->
+        </section>
       </main>
 
       <footer class="footer">
         <div class="footer__columns">
           <div class="footer__column footer__column_content_copyright">
             <div class="logo logo_place_footer"></div>
-            <p class="footer__author">© 2020. Стас Стаховский</p>
+            <p class="footer__author">&copy; 2020. Стас Стаховский</p>
+            <!-- Исправлено, но странно. Я сейчас посмотрел исходник до самого первого ревью, там был &copy, с ревью мне уже вернулся со знаком копирайт -->
+            <!-- Можно лучше: для спец символов нужно использовать html - мнемоники (https://ru.wikipedia.org/wiki/Мнемоники_в_HTML) -->
           </div>
           <div class="footer__column footer__column_content_info">
             <h3 class="footer__column-heading">О практикуме</h3>
@@ -210,7 +411,7 @@
               <li>
                 <a class="footer__link" href="#">
                   <img
-                    class="footer__social-icons"
+                    class="footer__social-icon"
                     src="./images/facebook_white.svg"
                     alt="Facebook"
                   />
@@ -220,7 +421,7 @@
               <li>
                 <a class="footer__link" href="#">
                   <img
-                    class="footer__social-icons"
+                    class="footer__social-icon"
                     src="./images/vk_white.svg"
                     alt="Вконтакте"
                   />
@@ -230,7 +431,7 @@
               <li>
                 <a class="footer__link" href="#">
                   <img
-                    class="footer__social-icons"
+                    class="footer__social-icon"
                     src="./images/instagram_white.svg"
                     alt="Instagram"
                   />
@@ -238,9 +439,54 @@
                 </a>
               </li>
             </ul>
+            <!-- Исправлено -->
+            <!-- Надо исправить:
+              Класс img должен быть в единственном числе: footer__social-icon
+            -->
           </div>
         </div>
       </footer>
     </div>
   </body>
 </html>
+
+<!--Резюме по работе:
+
+  У вас получилась отличная работа! Что понравилось:
+
+    - Используете HTML-мнемоники
+    - Форматирование кода.
+    - В некоторых местах были выбраны очень хорошие теги для элементов.
+    - Вы отлично справились с БЭМ подходом.
+    - Файловая система по БЭМ
+    - Верстка очень похожа на макет.
+    - Правильно оформлен head
+  
+  Что надо исправить помимо замечаний в коде:
+
+    - Для треугольника следует создать свою анимацию, которая будет начинаться в 0deg,
+    потому что сейчас при загрузке страницы треугольник делает скачок с 0 до -15, а уже потом начинает крутиться.
+     <Испрарвлено>
+
+    - feinman__subtitle и feinman__link должны быть на одном уровне (верните feinman padding-top, лучше убрать отступ у oakley)
+      <Испрарвлено>
+
+  Можно лучше:
+
+    - Вы правильно убрали у <iframe> устаревший атрибут frameborder, но рамки лучше убрать с помощью border: 0 в css
+      <Испрарвлено>
+
+  Комментарии "можно лучше" носят рекомендательный характер, их выполнение остается на Ваше усмотрение.
+  Комментарии "надо исправить" являются обязательными, только при выполнении всех "надо исправить" работа будет зачтена.
+  Пожалуйста, не удаляйте комментарии ревьюера до следующей итерации.
+  Для вашего удобства, рекомендую помечать каким-нибудь символом комментарии, которые вы выполнили.
+-->
+
+<!-- 1)Вопрос касательно @keyframes и БЭМ файловой структуры: keyframe нужно
+подключать отдельным файлом или можно писать прям в том файле где данная
+анимация используется. И если анимация используется в рразных блоках сайта, то
+получается анимацию нужно делать отдельным блоком и потом миксовать с нужными
+элементами? -->
+
+<!-- 2) Насчет blockquote /230 строка/ как по семантике указывается автор статьи, в некоторых примерах в интернете,
+текст просто кладут в <footer> и все. -->

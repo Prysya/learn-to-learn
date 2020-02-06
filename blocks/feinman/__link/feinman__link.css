@@ -8,5 +8,10 @@
     top: 50%;
     right: 48px;
     z-index: 2;
+    transition: opacity .2s linear;
+  }
+  
+  .feinman__link:hover {
+    opacity: .50;
   }
   
